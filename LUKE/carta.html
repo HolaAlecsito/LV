@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta de amor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #EEEEEE;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      font-family: 'Playfair Display', serif;
+      height: 50px;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      font-family: serif;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #97adbc;
+    }
+
+    select {
+      font-family: serif;
+      color: white;
+      background-color: #333;
+      border-color: #333;
+      font-size: 17px;
+    }
+
+    select:hover {
+      color: #97adbc;
+    }
+
+    .contenido {
+      max-width: 800px;
+      margin: 30px 20px;
+      text-align: justify;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      line-height: 1.7;
+      font-size: 17px;
+      color: #4b2e36;
+    }
+
+    .carta-emoji {
+      font-size: 80px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .carta-emoji:hover {
+      transform: scale(1.2);
+    }
+
+    .mensaje {
+      margin-top: 20px;
+      font-size: 26px;
+      color: white;
+      display: none;
+      text-align: center;
+      background-color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .contenido {
+        font-size: 16px;
+        padding: 20px;
+      }
+
+      .carta-emoji {
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <select id="catalogo" onchange="redireccionar(this.value)">
+            <option value="">INICIO</option>
+            <option value="carta.html">LETTER</option>
+            <option value="poema.html">POEM</option>
+            <option value="fotos.html">PHOTOS</option>
+          </select>
+        </li>
+        <li><a href="https://open.spotify.com/playlist/0g5cFZq9JQ16Qp986X71jt?si=BtfWHtzHSFiD_Uudzu7-ZA">PLAYLIST</a></li>
+        <li><a href="https://mx.pinterest.com/lukwn_/alec/">PINTEREST</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido">
+    <p>
+      Llevo sentado 30 minutos pensando en cuáles son las palabras correctas para darte a entender todo lo que quiero, aunque sé perfectamente que ni escribiendo 100 libros podría darte a entender lo enamorado que estoy de ti. No sé cómo le hiciste para volverme loco en tan poco tiempo, tal vez fue tu sonrisa, esa que me encanta ver y escuchar, tus ojos, esos lindos ojos que adoro ver brillar y que se hacen chinitos cada vez que sonríes, tus manos, esas manos con las que me tomaste la primera vez que nos vimos, tu preciosa carita, esa que tanto adoro ver y desearía ver todos los días, tu forma tan linda de escribir, esos poemas tan lindos que adoro que me muestres, tu divertida y linda personalidad, la que cada día me enamora más, o tal vez tu forma de pensar, esa manera de ver las cosas de forma tan madura y calmada, tu voz, esa que adoro escuchar cada vez que me mandas audios o hacemos llamadas de horas, o tu gran sentido del humor, el que hace que siempre me ría al estar contigo, tal vez los gustos tan parecidos que tenemos o la bonita conexión que siento cada vez que hablo contigo, o tal vez porque eres tú, créeme que jamás me había enamorado tan rápido de una persona como lo hice contigo, pero me entiendo, con esa cara, ese cuerpo, esos gustos, esas metas, esa forma de pensar y ese sentido del humor, ¿quién no lo haría? Me gustas, Alexis, me gustas porque eres tú, porque eres un niño increíble en todos los aspectos posibles, cada mensaje, cada llamada, cada buenos días o buenas noches, significan todo para mí, el hecho de solo pensar en verte me hace sentir muy emocionado, yo jamás había esperado por un mensaje, jamás le había dedicado a alguien una canción tan cursi como "Donde nadie pueda ir" o "Cuando tus ojos me ven", jamás había esperado tanto para hacer una llamada o emocionarme tanto por ir a ver a alguien, jamás había sentido tanto por un solo abrazo o un roce de manos. No tengo idea de qué me hiciste, pero sé que no quiero que termine nunca, el solo hecho de hablar contigo se siente tan bonito, que llegue la tarde y saber que por fin podré escuchar tu linda voz, hablar, reír y platicar juntos, todo eso me hace sentir tan en paz, se siente como escuchar una hermosa canción por primera vez, créeme que nadie me había tenido a las 3 de la mañana escribiendo una carta, mucho menos programando toda una página solo para hacerle entender cuánto me gusta, eres un niño maravilloso de pies a cabeza y créeme que con el poco tiempo que hemos pasado juntos sé perfectamente que vales la pena, contigo sí quiero arriesgarme, contigo sí quiero darlo todo, contigo sí quiero sentir que por fin todo va a estar bien, de verdad quiero que esto vaya más lejos, de verdad quiero hacer las cosas bien contigo, porque me gustas, me atraes y me llamas la atención de todas las formas posibles, yo sí quiero darte un pedazo de mi piel y que me lleves contigo para siempre, quiero sentir el roce de tu mano con la mía y saber que estoy bien a tu lado, quiero hacerte sentir seguro, cómodo y bien, que nunca te haga falta nada de amor y que sientas que jamás serás juzgado, que seas tú conmigo, de la forma más sincera que existe, ser tu diario de secretos, la persona a la que le cuentes todo lo que no a todos les puedes contar, que sientas la confianza de mostrarme tu mundo por completo y hacerme parte de él. No tienes idea de lo mucho que me gustas, sinceramente yo tampoco lo sabriá proclamar, aunque sí sé que es más de lo que un ser humano puede amar.
+    </p>
+  </div>
+
+  <div class="carta-emoji" onclick="mostrarMensaje()">💌</div>
+  <div class="mensaje" id="mensaje">¿Quieres ser mi novio? ❤</div><br><br>
+
+  <script>
+    function redireccionar(seleccion) {
+      if (seleccion) {
+        window.location.href = seleccion;
+      }
+    }
+
+    function mostrarMensaje() {
+      document.getElementById('mensaje').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

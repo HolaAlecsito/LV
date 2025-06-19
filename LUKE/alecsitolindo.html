@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Me gustas</title>
+  <style>
+    body {
+      background-color: #white;
+      margin: 0;
+    }
+
+    header {
+      background-color:#333;
+      color: white;
+      padding: 15px 0;
+      font-family: 'Playfair Display', serif;
+      margin-top: -10px;
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 20px;
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      font-family: serif;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #97adbc;
+    }
+    .category-banner{
+  background-image:linear-gradient(#00000030, #00000030), url("alec.jpg") ;
+  background-size:cover ;
+  background-position: center;
+  margin-top: -20px;
+  width: 1264px;
+  height: 600px;
+
+}
+.card-productos{
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.top-productos{
+  margin-left: 370px;
+  margin-top: 30px;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.top-productos span{
+  color:#777;
+  background-color:white;
+  padding: 1rem 3rem;
+  font-size: 13px;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+ .top-productos {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .top-productos span {
+    padding: 6px 14px;
+    margin: 5px;
+    background: #ddd;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: inline-block;
+    height: 20px;
+  }
+
+  .top-productos .active {
+    background: #222;
+    color: #fff;
+  }
+
+  .productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card-producto {
+    width: 140px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .card-producto img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  select{
+  font-family:serif;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  background-color: #333;
+  border-color:#333 ;
+  font-size: 17px;
+
+
+}
+select:hover{
+  color:#97adbc;
+  text-decoration:none;
+}
+select:after:hover{
+  opacity: 1;
+}
+footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <select id="catalogo" onchange="redireccionar(this.value)">
+              <option value="">INICIO</option>
+              <option value="carta.html">LETTER</option>
+              <option value="fotos.html">PHOTOS</option>
+            </select>
+            <script>
+              function redireccionar(seleccion) {
+                window.location.href = seleccion;
+              }
+            </script>
+            <li><a href="https://open.spotify.com/playlist/0g5cFZq9JQ16Qp986X71jt?si=BtfWHtzHSFiD_Uudzu7-ZA">PLAYLIST</a></li>
+        <li><a href="https://mx.pinterest.com/lukwn_/alec/?request_params=%7B%221%22%3A%20130%2C%20%227%22%3A%201893689061181910862%2C%20%228%22%3A%201081989947916200133%2C%20%2230%22%3A%20%22Alec%5Cu2661%22%2C%20%2232%22%3A%2045%2C%20%2233%22%3A%20%5B1081989879233225056%2C%201081989879233225054%2C%201081989879233225052%2C%201081989879233225044%2C%201081989879233225042%2C%201081989879233225032%2C%201081989879233225028%2C%201081989879233224965%2C%201081989879233224955%5D%2C%20%2236%22%3A%20%5B1081989947916200133%5D%2C%20%2237%22%3A%20%22Alec%5Cu2661%22%2C%20%2234%22%3A%200%2C%20%22102%22%3A%204%7D&full_feed_title=Alec%E2%99%A1&view_parameter_type=3069&pins_display=3">PINTEREST</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>
+  <section class="container top-banner">
+        <div class="card-category category-banner">
+          </div>
+        </section>
+<div class="productos-container">
+  <!-- Destacados -->
+  <div class="card-producto categoria destacados">
+      <img src="us.jpg" alt="Computadora">
+      <p class="precio">Tan lindo como una cancion de Deftones</p>
+  </div><br>
+  <div class="card-producto categoria destacados">
+      <img src="alexiss.jpg" alt="Teclado">
+      <p class="precio">Tu piel rozando la mía</p>
+  </div><br><br>
+<style>
+    .reproductor {
+      background: #333;
+      padding: 30px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      width: 600px;
+      height: 100px;
+    }
+
+    .reproductor h3 {
+      margin-bottom: 20px;
+      margin-top: -10px;
+    }
+
+    .botones button {
+      background-color: #97adbc;
+      border: none;
+      color: white;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .botones button:hover {
+      background-color: #000;
+      transform: scale(1.05);
+    }
+
+    .botones button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="reproductor">
+    <h3>♫ Donde Nadie Pueda Ir - Manuel Medrano</h3>
+    <audio id="miCancion" src="love.mp3" preload="auto"></audio>
+
+    <div class="botones">
+      <button onclick="reproducir()">⏭︎ Reproducir</button>
+      <button onclick="pausar()">⏸︎ Pausar</button>
+      <button onclick="reiniciar()">⟲ Reiniciar</button>
+    </div>
+  </div>
+
+  <script>
+    const cancion = document.getElementById("miCancion");
+
+    function reproducir() {
+      cancion.play();
+    }
+
+    function pausar() {
+      cancion.pause();
+    }
+
+    function reiniciar() {
+      cancion.currentTime = 0;
+      cancion.play();
+    }
+  </script>
+  <footer>
+    &copy; Esta pagina esta hecha con el alma y corazón de una persona que te quiere a su lado.
+  </footer>
+
+</body>
+</html>
+
+

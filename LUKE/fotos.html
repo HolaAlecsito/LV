@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Me gustas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      font-family: 'Playfair Display', serif;
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      font-family: serif;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #97adbc;
+    }
+
+    select {
+      font-family: serif;
+      color: white;
+      background-color: #333;
+      border-color: #333;
+      font-size: 17px;
+    }
+
+    select:hover {
+      color: #97adbc;
+    }
+
+    .productos-container {
+      column-count: 4; /* Número de columnas tipo Pinterest */
+      column-gap: 15px;
+      padding: 20px;
+    }
+
+    .card-producto {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 15px;
+      break-inside: avoid;
+      text-align: center;
+    }
+
+    .card-producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+}
+
+.card-producto img:hover {
+  transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+
+    .card-producto p {
+      font-size: 13px;
+      margin-top: 5px;
+      color: #444;
+    }
+
+    @media (max-width: 800px) {
+      .productos-container {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .productos-container {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <select id="catalogo" onchange="redireccionar(this.value)">
+            <option value="">INICIO</option>
+            <option value="alecsitolindo.html">REGRESAR</option>
+            <option value="carta.html">LETTER</option>
+            <option value="poema.html">POEM</option>
+          </select>
+        </li>
+        <li><a href="https://open.spotify.com/playlist/0g5cFZq9JQ16Qp986X71jt?si=BtfWHtzHSFiD_Uudzu7-ZA">PLAYLIST</a></li>
+        <li><a href="https://mx.pinterest.com/lukwn_/alec/">PINTEREST</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    function redireccionar(seleccion) {
+      if (seleccion) {
+        window.location.href = seleccion;
+      }
+    }
+  </script>
+
+  <div class="productos-container">
+    <div class="card-producto"><img src="us.jpg" alt="1"><p>Tan lindo como una canción de Deftones</p></div>
+    <div class="card-producto"><img src="alexiss.jpg" alt="2"><p>Tu piel rozando la mía</p></div>
+    <div class="card-producto"><img src="lindo.jpg" alt="3"><p>todo lindo</p></div>
+    <div class="card-producto"><img src="cas.jpg" alt="4"><p>me recuerdas a cada canción romántica de cas</p></div>
+    <div class="card-producto"><img src="juntitos.jpg" alt="5"><p>tenerte cerca es lo más bonito del mundo</p></div>
+    <div class="card-producto"><img src="llaveritos.jpg" alt="6"><p>llaveritos para tener algo juntitos</p></div>
+    <div class="card-producto"><img src="oji.jpg" alt="7"><p>amo el brillo de tus ojitos</p></div>
+    <div class="card-producto"><img src="lov.jpg" alt="8"><p>Un corazoncito con tu hermoso pelito</p></div>
+    <div class="card-producto"><img src="usss.jpg" alt="9"><p>me gustas mucho</p></div>
+    <div class="card-producto"><img src="whit.jpg" alt="10"><p>un lugar tan bonito como tú</p></div>
+    <div class="card-producto"><img src="aa.jpg" alt="11"><p>cada poema de amor es escrito por mi corazón para ti</p></div>
+    <div class="card-producto"><img src="alecsito.jpg" alt="12"><p>jamás me voy a cansar de decirte lo hermoso que eres</p></div>
+  </div>
+
+</body>
+</html>
+
